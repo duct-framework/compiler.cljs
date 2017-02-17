@@ -1,6 +1,13 @@
-(ns duct.compiler.cljs)
+(ns duct.compiler.cljs
+  "Integrant methods to compile ClojureScript."
+  (:require [cljs.build.api :as cljs]
+            [integrant.core :as ig]))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(derive :duct.compiler/cljs :duct/compiler)
+
+(defn- build-cljs [{:keys [source-paths build-options]}]
+  (cljs/build (apply cljs/inputs source-paths) build-options)
+  (:output-to build-options))
+
+(defmethod ig/init-key :duct.compiler/cljs [_ {:keys [builds]}]
+  (mapv build-cljs builds))
