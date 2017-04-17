@@ -6,5 +6,5 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [integrant "0.3.3"]]
   :profiles
-  {:provided {:dependencies [[org.clojure/clojurescript "1.9.494"]]}
+  {:provided {:dependencies [[org.clojure/clojurescript "1.9.521"]]}
    :dev      {:source-paths ["dev/src"]}})
