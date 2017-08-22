@@ -13,7 +13,7 @@ ClojureScript during development, use [server.figwheel][].
 
 To install, add the following to your project `:dependencies`:
 
-    [duct/compiler.cljs "0.1.2"]
+    [duct/compiler.cljs "0.2.0"]
 
 ## Usage
 

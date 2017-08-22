@@ -1,4 +1,4 @@
-(defproject duct/compiler.cljs "0.1.2"
+(defproject duct/compiler.cljs "0.2.0"
   :description "Integrant methods for compiling ClojureScript"
   :url "https://github.com/duct-framework/compiler.cljs"
   :license {:name "Eclipse Public License"
