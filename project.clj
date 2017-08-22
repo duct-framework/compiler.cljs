@@ -7,5 +7,5 @@
                  [duct/core "0.6.0"]
                  [integrant "0.6.1"]]
   :profiles
-  {:provided {:dependencies [[org.clojure/clojurescript "1.9.562"]]}
+  {:provided {:dependencies [[org.clojure/clojurescript "1.9.908"]]}
    :dev      {:source-paths ["dev/src"]}})
