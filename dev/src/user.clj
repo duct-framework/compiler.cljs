@@ -1,6 +1,9 @@
 (ns user
   (:require [integrant.core :as ig]
+            [duct.core :as duct]
             [duct.compiler.cljs :as cljs]))
+
+(duct/load-hierarchy)
 
 (def config
   {:duct.compiler/cljs

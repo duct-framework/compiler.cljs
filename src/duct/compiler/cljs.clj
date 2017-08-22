@@ -3,8 +3,6 @@
   (:require [cljs.build.api :as cljs]
             [integrant.core :as ig]))
 
-(derive :duct.compiler/cljs :duct/compiler)
-
 (defn- build-cljs [{:keys [source-paths build-options]}]
   (cljs/build (apply cljs/inputs source-paths) build-options)
   (:output-to build-options))
