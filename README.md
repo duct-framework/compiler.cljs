@@ -28,11 +28,11 @@ the same way as [lein-cljsbuild][].
                             :optimizations :whitespace}}]}}
 ```
 
-The `:build-options` available are covered in the ClojureScript wiki
+The `:build-options` available are covered in the ClojureScript
 page on [compiler options][].
 
 [lein-cljsbuild]:   https://github.com/emezeske/lein-cljsbuild
-[compiler options]: https://github.com/clojure/clojurescript/wiki/Compiler-Options
+[compiler options]: https://clojurescript.org/reference/compiler-options
 
 ## License
 
